@@ -14,7 +14,7 @@ mv pre-start.sh deb/opt/dedis/bypros/bin/
 find deb ! -perm -a+r -exec chmod a+r {} \;
 
 fpm \
-    --force -t deb -a all -s dir -C deb -n dedis-bypros -v ${VERSION} \
+    --force -t deb -a all -s dir -C deb -n dedis-bypros -v $(cat VERSION)\
     --deb-user bypros \
     --deb-group bypros \
     --before-install pkg/before-install.sh \
