@@ -19,7 +19,7 @@ jobs:
           git rev-parse "v$(cat VERSION)" > /dev/null 2>&1
           echo "TAG_MISSING=$?" >> $GITHUB_ENV
           echo "VERSION=v$(cat VERSION)" >> $GITHUB_ENV
-        shell: bash {0}
+        shell: bash
 
       - name: Push a new tag if its missing
         uses: actions/github-script@v3
