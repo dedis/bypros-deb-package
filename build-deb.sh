@@ -3,8 +3,7 @@ set -xe
 
 # cleanup previous installations
 rm -rf deb
-
-VERSION="v$(cat VERSION)"
+mkdir deb
 
 cp -a pkg/lib deb
 cp -a pkg/opt deb
@@ -26,7 +25,7 @@ fpm \
     --after-remove pkg/after-remove.sh \
     --url https://github.com/dedis/bypros-deb-package.git \
     --description 'Byzcoin proxy package' \
-    --package dedis-bypros-$VERSION.deb \
+    --package dedis-bypros-v$(cat VERSION).deb \
     .
 
 # cleanup
