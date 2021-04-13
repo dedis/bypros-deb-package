@@ -1,7 +1,7 @@
 on:
   push:
     branches:
-      - master
+      - main
 
 env:
   GO_VERSION: 1.15
@@ -10,7 +10,7 @@ jobs:
   new-tag:
     runs-on: ubuntu-latest
     steps:
-      - uses: actions/checkout@master
+      - uses: actions/checkout@main
         with:
           fetch-depth: 0
 
