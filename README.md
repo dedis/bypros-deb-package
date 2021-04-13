@@ -1,5 +1,5 @@
 # bypros-deb-package
-Debian package for the Byzcoin Proxy service
+Debian package for the Byzcoin Proxy service.
 
 Creates a new .deb package each time a tag corresponding to the version stored
 in "./VERSION" is pushed.
