@@ -11,7 +11,7 @@ cp -a pkg/opt deb
 cp -a pkg/etc deb
 
 mv app/bypros-deb deb/opt/dedis/bypros/bin/ # binary created by C.I.
-mv pre-start.sh deb/opt/dedis/bypros/bin/
+mv pre-start.sh   deb/opt/dedis/bypros/bin/
 
 # adjust permissions
 find deb ! -perm -a+r -exec chmod a+r {} \;
