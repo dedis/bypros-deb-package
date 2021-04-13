@@ -1,0 +1,12 @@
+[Unit]
+Description=Byzcoin proxy service
+
+[Service]
+User=bypros
+ExecStartPre=/opt/dedis/bypros/bin/pre-start.sh
+ExecStart=/opt/dedis/bypros/bin/bypros-deb -d 2 -c /etc/dedis/bypros/private.toml
+Restart=always
+EnvironmentFile=/etc/dedis/bypros/bypros.conf
+
+[Install]
+WantedBy=multi-user.target
