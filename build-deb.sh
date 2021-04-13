@@ -6,6 +6,7 @@ rm -rf deb
 
 VERSION="v$(cat VERSION)"
 
+mkdir -p deb/opt/dedis/bypros/bin
 mv app/bypros-deb deb/opt/dedis/bypros/bin/ # binary created by C.I.
 mv pre-start.sh deb/opt/dedis/bypros/bin/
 
