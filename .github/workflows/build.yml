@@ -78,7 +78,7 @@ jobs:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
         with:
           upload_url: ${{ steps.create_release.outputs.upload_url }}
-          asset_path: ./twins-demo-reset-${{ env.VERSION }}.deb
-          asset_name: twins-demo-reset-${{ env.VERSION }}.deb
+          asset_path: ./dedis-bypros-${{ env.VERSION }}.deb
+          asset_name: dedis-bypros-${{ env.VERSION }}.deb
           asset_content_type: application/vnd.debian.binary-package
         if: ${{ env.TAG_MISSING != 0 }}
