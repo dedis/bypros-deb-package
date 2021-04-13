@@ -1,4 +1,4 @@
-#!/bin/sh
+#!/bin/bash
 
 # This file is run before starting the service. It creates the private.toml file
 # if not already present. It also checks that the config file is filled.
@@ -6,7 +6,7 @@
 config_file="/etc/dedis/bypros/bypros.conf"
 
 # load config
-if [[ ! -f "/etc/dedis/bypros/private.toml" ]]
+if [ ! -f "/etc/dedis/bypros/private.toml" ]
 then
     source $config_file
 
