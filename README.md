@@ -21,3 +21,9 @@ Once it is filled you can re-run with:
 sudo service bypros start
 sudo service bypros status
 ```
+
+You can check the logs with:
+
+```sh
+sudo journalctl --unit=bypros.service -n 100
+```
