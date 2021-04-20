@@ -8,6 +8,7 @@ mkdir deb
 cp -a pkg/lib deb
 cp -a pkg/opt deb
 cp -a pkg/etc deb
+cp -a pkg/var deb
 
 mv app/bypros-deb deb/opt/dedis/bypros/bin/ # binary created by C.I.
 mv pre-start.sh   deb/opt/dedis/bypros/bin/
